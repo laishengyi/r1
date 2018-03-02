@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class = "jumbotron">
+    <h1 title="I'm a title">Articles</h>
+    <ul class = "list-group">
+      {% for article in articles %}
+        <li  class = "list-group-item"><a style="color:Black;font-size:60%;" href= 'article/{{article.id}}/' >{{article.title}}</a></li>
+        <hr>
+      {% endfor %}
+    </ul>
+  <div>
+{% endblock %}
